@@ -90,11 +90,12 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <a
             className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            href="https://drive.google.com/drive/folders/1A6pzD7WIt99v-vbEtiJ7Iul3KuqSvTDv?usp=share_link"
+            href="../../public/Classic Resume.pdf"
             target="_blank"
             rel="noreferrer"
+            download
           >
-            Hire Me
+            Download CV
           </a>
         </div>
         <div className="lg:hidden">
@@ -107,9 +108,9 @@ const Navbar = () => {
                 <div className="flex items-center justify-between">
                   <div className="inline-flex items-center space-x-2">
                     <span className="bg-black rounded-full">
-                      <BiCodeAlt className="text-white p-1" size={30} />
+                      <FaUser className="text-white p-1" size={30} />
                     </span>
-                    <span className="font-bold">Nawaz</span>
+                    <span className="font-bold">Portfolio</span>
                   </div>
                   <div className="-mr-2">
                     <button
@@ -140,12 +141,13 @@ const Navbar = () => {
                   </nav>
                 </div>
                 <a
-                  className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                  href="https://drive.google.com/drive/folders/1A6pzD7WIt99v-vbEtiJ7Iul3KuqSvTDv?usp=share_link"
+                  className="m-2 w-full rounded-md bg-black px-3 py-1 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  href="../../public/Classic Resume.pdf"
                   target="_blank"
                   rel="noreferrer"
+                  download
                 >
-                  Hire Me
+                  Download CV
                 </a>
               </div>
             </div>
