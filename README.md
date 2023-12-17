@@ -77,10 +77,9 @@ Follow these steps:
 4. Make sure you have adjusted the .env file before starting the project. Rename the .env.example file to .env and provide your mongoDB-uri for connect.
 ```
 MONGODB_URI = "mongodb+srv://<username>:<password>@<atlas-project-name>.mongodb.net/<your-database-name>"
-
 ```
 
 Thank you for visiting my portfolio! If you have any questions or would like to connect, feel free to reach out to me.
 
 #### Note:
-This website was developed by Muhammad Yasir Ghaffar and Muhammad Zubair Khalid as web engineering lab. You are free to use the template to develop your personal portfolio website. 
+This website was developed by `Muhammad Yasir Ghaffar` and `Muhammad Zubair Khalid` as web engineering lab. You are free to use the template to develop your personal portfolio website.
