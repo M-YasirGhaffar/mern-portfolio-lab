@@ -61,32 +61,26 @@ This portfolio is built using the following technologies:
   - Frontend: [Vercel](https://vercel.com/): Cloud platform for hosting and deploying static websites and frontend applications.
   - Backend: [Render](https://cyclic.app/): Serverless platform for deploying backend applications.
 
+## Clone the Project
+
+To clone this project, run the following command in your terminal:
+```
+  git clone https://github.com/M-YasirGhaffar/mern-portfolio-lab.git
+```
 ## Setup project
 
 Follow these steps:
 
-1. Fork the repository and clone it to your local machine.
-
-```
-  git clone https://github.com/M-YasirGhaffar/mern-portfolio-lab.git
-```
-
-2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature` or `git checkout -b bugfix/your-bugfix`.
+1. Clone the project to your local machine.
+2. Run the following command in root directory: `npm install` and then `npm run dev` to start the project.
 3. Make your changes and test them thoroughly.
-4. Commit your changes: `git commit -m "Add your commit message"`.
-5. Push your changes to your forked repository: `git push origin feature/your-feature` or `git push origin bugfix/your-bugfix`.
-6. Open a pull request in this repository, describing the changes you made and why they should be merged.
-
-Thank you for your contribution!
-
-## Clone the Project
-
-To clone this project, run the following command in your terminal:
-
-```bash
-git clone https://github.com/your-username/your-portfolio.git
+4. Make sure you have adjusted the .env file before starting the project. Rename the .env.example file to .env and provide your mongoDB-uri for connect.
 ```
+MONGODB_URI = "mongodb+srv://<username>:<password>@<atlas-project-name>.mongodb.net/<your-database-name>"
 
-Replace your-username with your GitHub username. This will create a local copy of the project on your machine.
+```
 
 Thank you for visiting my portfolio! If you have any questions or would like to connect, feel free to reach out to me.
+
+#### Note:
+This website was developed by Muhammad Yasir Ghaffar and Muhammad Zubair Khalid as web engineering lab. You are free to use the template to develop your personal portfolio website. 
