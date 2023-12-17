@@ -1,8 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio! This is a showcase of my work, skills, and experience. Feel free to explore and learn more about me.
-
-**Live Demo:** [View Demo](https://shaikahmadnawaz.vercel.app/)
+This is a MERN stack portfolio website showcasing work, skills, and experience. Feel free to use this template or learn from it.
 
 ## Table of Contents
 
@@ -61,11 +59,11 @@ This portfolio is built using the following technologies:
   - [Mongoose](https://mongoosejs.com/): Object Data Modeling (ODM) library for MongoDB and Node.js.
 - Deployment:
   - Frontend: [Vercel](https://vercel.com/): Cloud platform for hosting and deploying static websites and frontend applications.
-  - Backend: [Cyclic](https://cyclic.app/): Serverless platform for deploying backend applications.
+  - Backend: [Render](https://cyclic.app/): Serverless platform for deploying backend applications.
 
-## Contributing
+## Setup project
 
-If you'd like to contribute to my portfolio, please follow these steps:
+Follow these steps:
 
 1. Fork the repository and clone it to your local machine.
 2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature` or `git checkout -b bugfix/your-bugfix`.
