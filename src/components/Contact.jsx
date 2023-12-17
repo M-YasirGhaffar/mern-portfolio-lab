@@ -28,7 +28,7 @@ const Contact = () => {
 
       // Handle the response
       if (response.data.success) {
-        toast.success("Message sent to Nawaz!", {
+        toast.success("Message sent to Yasir!", {
           duration: 1000,
         });
         // Display a success message or perform any desired action
@@ -71,11 +71,11 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-xl font-semibold mb-2">Email</h2>
-              <p className="text-gray-600">shaikahmadnawaz@gmail.com</p>
+              <p className="text-gray-600">placeholder@gmail.com</p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">Phone</h2>
-              <p className="text-gray-600">+91 95029 90520</p>
+              <p className="text-gray-600">+92-312 3423983</p>
             </div>
           </div>
           <form className="mt-8" onSubmit={handleSubmit}>

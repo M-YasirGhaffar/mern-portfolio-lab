@@ -8,12 +8,12 @@ const Footer = () => {
           <p className="text-white text-sm">
             Made with 🤍 by{" "}
             <a
-              href="https://www.linkedin.com/in/shaikahmadnawaz"
+              href="https://www.linkedin.com/in/m-yasir-ghaffar"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white font-bold hover:underline"
             >
-              Shaik Ahmad Nawaz
+              Yasir and Zubair
             </a>
           </p>
         </div>
