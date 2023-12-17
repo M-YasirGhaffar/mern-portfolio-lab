@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:px-6 lg:py-24 xl:col-span-6">
           <h1 className="mt-8 text-4xl tracking-tight text-black lg:text-6xl">
             Hi there, I am{" "}
-            <span className="inline-block text-black font-bold">Nawaz</span>
+            <span className="inline-block text-black font-bold">Yasir</span>
           </h1>
 
           <p className="mt-8 text-lg text-gray-700">
@@ -22,9 +22,9 @@ const Hero = () => {
             experiences.
           </p>
 
-          <div className="mt-8 flex space-x-4">
+          <div className="mt-8 flex justify-center space-x-8">
             <a
-              href="https://www.linkedin.com/in/shaikahmadnawaz"
+              href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,21 +34,21 @@ const Hero = () => {
               />
             </a>
             <a
-              href="https://github.com/shaikahmadnawaz"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaGithub className="text-black hover:text-gray-800" size={24} />
             </a>
             <a
-              href="https://twitter.com/shaikahmadnawaz"
+              href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaTwitter className="text-black hover:text-gray-800" size={24} />
             </a>
             <a
-              href="https://www.instagram.com/shaikahmadnawaz"
+              href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -58,7 +58,7 @@ const Hero = () => {
               />
             </a>
             <a
-              href="https://discordapp.com/users/sanawaz#0270"
+              href="https://discordapp.com"
               target="_blank"
               rel="noopener noreferrer"
             >

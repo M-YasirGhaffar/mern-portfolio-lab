@@ -14,7 +14,7 @@ const projects = [
       "#MongoDB",
       "#GCP",
     ],
-    url: "https://wayvaaradhi.org",
+    url: "https://www.google.com",
   },
   {
     title: "Book Talks",
@@ -29,7 +29,7 @@ const projects = [
       "#MongoDB",
       "#AWS S3",
     ],
-    url: "https://github.com/shaikahmadnawaz/book-talks",
+    url: "https://www.google.com",
   },
   {
     title: "Real-time Code Editor",
@@ -44,7 +44,7 @@ const projects = [
       "#GitHub",
       "#Heroku",
     ],
-    url: "https://github.com/shaikahmadnawaz/realtime-code-editor",
+    url: "https://www.google.com",
   },
   {
     title: "Workout Tracker",
@@ -60,7 +60,7 @@ const projects = [
       "#REST API",
       "#Cyclic",
     ],
-    url: "https://github.com/shaikahmadnawaz/workout-tracker",
+    url: "https://www.google.com",
   },
   {
     title: "VConnect Globe",
@@ -68,24 +68,24 @@ const projects = [
     description:
       "Developed a fully responsive landing page for Vconnectglobe, a startup specializing in 1‑2‑1 mentorship for students aspiring to study in foreign universities.",
     tags: ["#React", "#Tailwind CSS", "#GitHub", "#Hostinger"],
-    url: "https://github.com/shaikahmadnawaz/vconnectglobe",
+    url: "https://www.google.com",
   },
 
-  {
-    title: "My Portfolio",
-    imageUrl: "my-portfolio.png",
-    description:
-      "Developed my personal portfolio website using ReactJS and Tailwind CSS. Showcased my projects, skills, and experience, Implemented responsive design.",
-    tags: [
-      "#React",
-      "#Tailwind CSS",
-      "#Node.js",
-      "#Express.js",
-      "#MongoDB",
-      "#Mongoose",
-    ],
-    url: "https://github.com/shaikahmadnawaz/my-portfolio",
-  },
+  // {
+  //   title: "My Portfolio",
+  //   imageUrl: "my-portfolio.png",
+  //   description:
+  //     "Developed my personal portfolio website using ReactJS and Tailwind CSS. Showcased my projects, skills, and experience, Implemented responsive design.",
+  //   tags: [
+  //     "#React",
+  //     "#Tailwind CSS",
+  //     "#Node.js",
+  //     "#Express.js",
+  //     "#MongoDB",
+  //     "#Mongoose",
+  //   ],
+  //   url: "https://www.google.com",
+  // },
 ];
 
 function Projects() {
@@ -127,6 +127,12 @@ function Projects() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (window.confirm('You are about to be redirected to google.com as projects were just placeholders')) {
+                      window.open(project.url, '_blank');
+                    }
+                  }}
                 >
                   View Project{" "}
                   <ArrowUpRight className="inline-block ml-1" size={12} />

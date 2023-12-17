@@ -4,17 +4,24 @@ function Experience() {
   const experiences = [
     {
       title: "Web Development Intern",
-      company: "Atoms Digital Solutions",
-      duration: "March 2023 - Present",
+      company: "Private Company",
+      duration: "July 2023 - Present",
       description:
         "Experienced MERN stack web developer specializing in efficient and scalable web applications. Passionate about delivering high-quality code and creating seamless user experiences. Collaborating with a talented team at Atoms Group to bring innovative solutions to life. Let's turn your ideas into reality with cutting-edge technology.",
     },
     {
       title: "Open Source Contributor",
-      company: "GirlScript Summer of Code",
+      company: "Project Trivia",
       duration: "May 2023 - Present",
       description:
-        "Passionate open source contributor actively participating in GirlScript Summer of Code. Contributing to meaningful projects and collaborating with a diverse community to solve real-world challenges. Dedicated to enhancing coding skills, fostering innovation, and making a positive impact in the tech industry.",
+        "Passionate open source contributor actively participating in Project Trivia. Contributing to meaningful projects and collaborating with a diverse community to solve real-world challenges. Dedicated to enhancing coding skills, fostering innovation, and making a positive impact in the tech industry.",
+    },
+    {
+      title: "Mega Project",
+      company: "Self",
+      duration: "December 2022 - Present",
+      description:
+        "Working on a learning project using ElectronJS. Goal of the project is to create a most reliable media player for windows users using ElectronJS which is used to created desktop apps using web technologies.",
     },
 
     // Add more experiences here

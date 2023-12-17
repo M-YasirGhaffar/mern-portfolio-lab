@@ -16,8 +16,8 @@ const About = () => {
             <div className="px-4 py-8 md:py-10 lg:py-12">
               <h2 className="text-3xl font-bold mb-4">About Me</h2>
               <p className="text-lg mb-4">
-                Hi, I'm Nawaz, a Full Stack Web Developer with a focus on MERN
-                stack (MongoDB, Express.js, React.js, and Node.js). I have a
+                Hi, I'm Yasir, a Full Stack Web Developer with a focus on MERN
+                stack i.e. MongoDB, Express.js, React.js, and Node.js. I have a
                 passion for creating web applications that provide seamless user
                 experiences and solve real-world problems.
               </p>
