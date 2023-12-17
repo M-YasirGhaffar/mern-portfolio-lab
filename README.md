@@ -66,6 +66,11 @@ This portfolio is built using the following technologies:
 Follow these steps:
 
 1. Fork the repository and clone it to your local machine.
+
+```
+  git clone https://github.com/M-YasirGhaffar/mern-portfolio-lab.git
+```
+
 2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature` or `git checkout -b bugfix/your-bugfix`.
 3. Make your changes and test them thoroughly.
 4. Commit your changes: `git commit -m "Add your commit message"`.
