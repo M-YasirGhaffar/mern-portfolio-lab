@@ -59,7 +59,7 @@ This portfolio is built using the following technologies:
   - [Mongoose](https://mongoosejs.com/): Object Data Modeling (ODM) library for MongoDB and Node.js.
 - Deployment:
   - Frontend: [Vercel](https://vercel.com/): Cloud platform for hosting and deploying static websites and frontend applications.
-  - Backend: [Render](https://cyclic.app/): Serverless platform for deploying backend applications.
+  - Backend: [Render](https://render.com/): Serverless platform for deploying backend applications.
 
 ## Clone the Project
 
