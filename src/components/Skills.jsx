@@ -24,6 +24,7 @@ const Skills = () => {
               <li>Redux Toolkit</li>
               <li>Tailwind CSS</li>
               <li>TypeScript</li>
+              <li>Redux</li>
               {/* Add more frontend skills */}
             </ul>
           </div>
@@ -39,6 +40,9 @@ const Skills = () => {
               <li>MySQL</li>
               <li>Mongoose</li>
               <li>REST API</li>
+              <li>Php</li>
+              <li>GraphQL API</li>
+              <li>PostgreSQL</li>
               {/* Add more backend skills */}
             </ul>
           </div>
@@ -54,7 +58,7 @@ const Skills = () => {
               <li>GCP</li>
               <li>Kubernetes</li>
               <li>GitHub Actions</li>
-              <li>Nginx</li>
+              <li></li>
               {/* Add more DevOps skills */}
             </ul>
           </div>

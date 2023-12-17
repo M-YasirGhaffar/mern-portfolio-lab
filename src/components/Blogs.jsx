@@ -62,6 +62,14 @@ const Blogs = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 w-full rounded-sm bg-black text-sm font-semibold text-white px-2 py-1.5 shadow-sm hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
+                  
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (window.confirm('You are about to be redirected to google.com as blogs were just placeholders')) {
+                        window.open('https://www.google.com', '_blank');
+                      }
+                    }}
+
                   >
                     Read More{" "}
                     <ArrowUpRight className="inline-block ml-1" size={12} />
