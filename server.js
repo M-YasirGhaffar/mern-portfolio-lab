@@ -9,62 +9,70 @@ dotenv.config();
 const app = express();
 
 app.use(cors());
-// MONGODB_URI = "mongodb+srv://mghaffarbese21seecs:yasir0027@reactportfoliodb.ggjqelh.mongodb.net/your-database-name"
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-// Create a schema for the message
-const messageSchema = new mongoose.Schema({
-  name: {
-    type: String,
-  },
-  email: {
-    type: String,
-  },
-  message: {
-    type: String,
-  },
+// Check if the database connection is successful
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
+db.once("open", () => {
+  console.log("Connected to the MongoDB database");
 });
 
-// Create a model based on the schema
-const Message = mongoose.model("Message", messageSchema);
+// Create a schema for the message
+const messageSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  message: String,
+});
+
+// Create a schema for the project
+const projectSchema = new mongoose.Schema({
+  title: String,
+  imageUrl: String,
+  description: String,
+  tags: [String],
+  url: String,
+});
+
+// Create a model based on the schema for the "personalPortfolio.projects" collection
+const Project = mongoose.model("Project", projectSchema, "projects");
+
+// Create a model based on the schema for the "personalPortfolio.messages" collection
+// const Message = mongoose.model("Message", messageSchema, "messages");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// API endpoint for receiving the form data
-app.post("/api/contact", async (req, res) => {
-  try {
-    // Extract the form data from the request body
-    const { name, email, message } = req.body;
-
-    // Create a new message instance
-    const newMessage = new Message({ name, email, message });
-
-    // Save the message to the database
-    await newMessage.save();
-
-    // Send a response back to the frontend
-    res.json({ success: true });
-  } catch (error) {
-    console.error("Error storing message:", error);
-    res.status(500).json({ error: "Internal Server Error" });
-  }
-});
-
 // API endpoint for retrieving messages
-app.get("/api/messages", async (req, res) => {
-  try {
-    // Retrieve all messages from the database
-    const messages = await Message.find();
+// app.get("/api/messages", async (req, res) => {
+//   try {
+//     // Retrieve all messages from the "personalPortfolio.messages" collection
+//     const messagesData = await Message.find();
 
-    // Send the messages as the response
-    res.json({ messages });
+//     // Send the messages as the response
+//     res.json({ messagesData });
+//   } catch (error) {
+//     console.error("Error retrieving messages:", error);
+//     res.status(500).json({ error: "Internal Server Error" });
+//   }
+// });
+
+// API endpoint for retrieving projects
+app.get("/api/projects", async (req, res) => {
+  try {
+    // Retrieve all projects from the "personalPortfolio.projects" collection
+    const projectsData = await Project.find();
+
+    console.log(projectsData);
+    // Send the projects as the response
+    res.json({ projectsData });
   } catch (error) {
-    console.error("Error retrieving messages:", error);
+    console.error("Error retrieving projects:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });

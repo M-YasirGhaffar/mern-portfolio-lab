@@ -1,94 +1,32 @@
 import { ArrowUpRight } from "lucide-react";
+import React, { useEffect, useState } from 'react';
 
-const projects = [
-  {
-    title: "Vaaradhi Portal",
-    imageUrl: "vaaradhi.png",
-    description:
-      "Saved 20 hours weekly by developing Vaaradhi Portal (MERN) for an NGO. Streamlined data entry and paperwork for donors, caretakers, and students.",
-    tags: [
-      "#React",
-      "#Tailwind CSS",
-      "#Node.js",
-      "#Express.js",
-      "#MongoDB",
-      "#GCP",
-    ],
-    url: "https://www.google.com",
-  },
-  {
-    title: "Book Talks",
-    imageUrl: "booktalks.png",
-    description:
-      "Developed a feature-rich book talks application using the MERN stack, allowing users to add reviews and ratings to books, enhancing community engagement and providing valuable insights.",
-    tags: [
-      "#React",
-      "#Tailwind CSS",
-      "#Node.js",
-      "#Express.js",
-      "#MongoDB",
-      "#AWS S3",
-    ],
-    url: "https://www.google.com",
-  },
-  {
-    title: "Real-time Code Editor",
-    imageUrl: "code-editor.png",
-    description:
-      "Developed a real-time code editor using React, Node.js, and Express.js. Implemented Web Sockets using socket.io for real-time collaboration, Added feature for creating rooms for multiple users to work on the same code simultaneously.",
-    tags: [
-      "#React",
-      "#Node.js",
-      "#Express.js",
-      "#Socket.IO",
-      "#GitHub",
-      "#Heroku",
-    ],
-    url: "https://www.google.com",
-  },
-  {
-    title: "Workout Tracker",
-    imageUrl: "workout-tracker.png",
-    description:
-      "Developed a workout tracking application using React, Node.js, Express.js, and MongoDB. Implemented authentication and authorization using JWT.",
-    tags: [
-      "#React",
-      "#Node.js",
-      "#Express.js",
-      "#MongoDB",
-      "#JWT",
-      "#REST API",
-      "#Cyclic",
-    ],
-    url: "https://www.google.com",
-  },
-  {
-    title: "VConnect Globe",
-    imageUrl: "vconnectglobe.png",
-    description:
-      "Developed a fully responsive landing page for Vconnectglobe, a startup specializing in 1‑2‑1 mentorship for students aspiring to study in foreign universities.",
-    tags: ["#React", "#Tailwind CSS", "#GitHub", "#Hostinger"],
-    url: "https://www.google.com",
-  },
 
-  // {
-  //   title: "My Portfolio",
-  //   imageUrl: "my-portfolio.png",
-  //   description:
-  //     "Developed my personal portfolio website using ReactJS and Tailwind CSS. Showcased my projects, skills, and experience, Implemented responsive design.",
-  //   tags: [
-  //     "#React",
-  //     "#Tailwind CSS",
-  //     "#Node.js",
-  //     "#Express.js",
-  //     "#MongoDB",
-  //     "#Mongoose",
-  //   ],
-  //   url: "https://www.google.com",
-  // },
-];
+import projects from "../../backend/data";
+
+
+import axios from 'axios';
+
 
 function Projects() {
+
+  const [projectsData, setProjectsData] = useState([]);
+
+  useEffect(() => {
+    // Fetch projects data from the API endpoint
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("/api/projects");
+        setProjects(response.data.projects);
+        console.log("fe iueg fuiaeg uieg fuieg uiseg fuieg figsei fgeui fgse fg " + response.data.projects)
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div id="#projects" className="relative w-full py-10 bg-white">
       <div className="mx-auto max-w-7xl px-8">
