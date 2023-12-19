@@ -10,7 +10,7 @@
 // app.use(cors());
 // app.use(express.json());
 
-// mongoose.connect('mongodb+srv://mghaffarbese21seecs:yasir0027@reactportfoliodb.ggjqelh.mongodb.net/?retryWrites=true&w=majority', 
+// mongoose.connect('mongodb+srv://mghaffarbese21seecs:<password-removed>@reactportfoliodb.ggjqelh.mongodb.net/?retryWrites=true&w=majority', 
 // {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
